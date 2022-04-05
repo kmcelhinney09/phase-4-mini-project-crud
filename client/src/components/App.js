@@ -10,6 +10,7 @@ function App() {
     fetch("/spices")
       .then((r) => r.json())
       .then(setSpices);
+      console.log(setSpices)
   }, []);
 
   function handleAddSpice(addedSpice) {
